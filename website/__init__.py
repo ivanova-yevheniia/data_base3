@@ -9,7 +9,7 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
     app.config["SECRET_KEY"] = 'secret key'
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:qwerty1234@localhost:5432/db_for_lab"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:postgress@localhost:5432/db"
     db.init_app(app)
 
     from .views import views
